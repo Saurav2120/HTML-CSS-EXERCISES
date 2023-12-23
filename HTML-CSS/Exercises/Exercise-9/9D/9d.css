@@ -1,0 +1,26 @@
+.container{
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(158, 20, 158);
+}
+.text{
+    color:white;
+    font-family: arial;
+    font-weight:bold;
+    margin-left:10px;
+}
+.search{
+    width:450px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:14px;
+    border:none;
+    padding-left:15px;
+}
+.button{
+    margin:10px 10px 10px 10px;
+    color:white;
+    background-color:rgb(158, 20, 158);
+    border:1px solid white;
+    font-weight:bold;
+}

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ostream": "cpp"
+    },
+    "git.enabled": false,
+    "git.autofetch": false
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:3000px;
+        }
+        .header{
+            position:fixed;
+            left:0px;
+            right:0px;
+            top:10px;
+            display:flex;
+            justify-content:space-between;
+            padding-left:75px;
+            padding-right:50px;
+        }
+        .left{
+            display:flex;
+            align-items:center;
+        }
+        .text{
+            margin-left:12px;
+            font-weight:bold;
+            
+        }
+        .image{
+            height:35px;
+            width:35px;
+            object-fit:cover;
+            object-position:right;
+            border-radius:50%;
+        }
+        .right{
+            display:flex;
+            align-items:center;
+        }
+        .friend{
+            background-color: blue;
+            color:white;
+            border-radius:4px;
+            border:none;
+            padding-top:6px;
+            padding-bottom:6px;
+            margin-right:6px;
+            font-weight:bold;
+        }
+        .Messg{
+            border-radius:4px;
+            border:none;
+            padding-top:6px;
+            padding-bottom:6px;
+            margin-right:6px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="/HTML-CSS/Exercises/Exercise-5/5e/exerc.-5_img" class="image">
+            <div class="text">Saurav Kumar Singh</div>
+        </div>
+        <div class="right">
+            <button class="friend">Add friend</button>
+            <button class="Messg">Message</button>
+        </div>
+    </div>
+</body>
+</html>

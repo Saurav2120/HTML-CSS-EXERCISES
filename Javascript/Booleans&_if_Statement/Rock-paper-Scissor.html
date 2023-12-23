@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissorst</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+    playGame('Rock');
+    ">Rock</button>
+    
+
+    <button onclick="
+    playGame('Paper');
+    ">Paper</button>
+
+
+    <button onclick="
+    playGame('Scissors');
+    ">Scissors</button>
+
+    <button onclick="scores.Wins = 0;
+    scores.Looses = 0;
+    scores.Ties = 0;
+    ">Reset Score</button>
+
+<script>
+
+    const scores = {
+        Wins : 0,
+        Looses : 0,
+        Ties : 0,
+    };
+
+    function playGame(playerMove){
+        const computer_move = pickComputerMove();
+        let result='';
+        if(playerMove==='Rock'){
+            if(computer_move==='Rock'){
+                result = 'Tie';
+            }
+            else if(computer_move==='Paper'){
+                result = 'You Lose';
+            }
+            else{
+                result = 'You Won';
+            }
+        }
+        else if(playerMove==='Paper'){
+            if(computer_move==='Rock'){
+                result = 'You Won';
+            }
+            else if(computer_move==='Paper'){
+                result = 'Tie';
+            }
+            else{
+                result = 'You Lose';
+            }
+        }
+        else if(playerMove==='Scissors'){
+            if(computer_move==='Rock'){
+                result = 'You Lose';
+            }
+            else if(computer_move==='Paper'){
+                result = 'You Won';
+            }
+            else{
+                result = 'Tie';
+            }
+        }
+
+        if(result === 'You Won'){
+            scores.Wins += 1;
+        }
+        else if(result === 'You Lose'){
+            scores.Looses += 1;
+        }
+        else if(result === 'Tie'){
+            scores.Ties +=1;
+        }
+
+        alert(`You picked ${playerMove}.   ---VS---   Computer picked ${computer_move}.
+RESULT = ${result}.
+
+Wins: ${scores.Wins}, Looses: ${scores.Looses}, Ties: ${scores.Ties}`);
+
+    }
+
+    function pickComputerMove(){
+        const randomNumber = Math.random();
+        console.log(randomNumber);
+        let computer_move = '';
+        if(randomNumber>=0 && randomNumber<1/3)
+            computer_move = 'Rock';
+        else if(randomNumber>=1/3 && randomNumber<2/3)
+            computer_move = 'Paper';
+        else
+            computer_move = 'Scissors';
+    
+    return computer_move;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:3000px;
+        }
+        .container{
+            position:relative;
+            display:inline-block;
+        }
+        .shirt{
+            width:300px;
+            height:300px;
+            object-fit:cover;
+        }
+        .discount{
+            position:absolute;
+            right:0px;
+            top:10px;
+            background-color: black;
+            color:white;
+            padding:6px 8px 6px 8px;
+            font-family:Arial;
+            font-size:12px;
+        }
+        .box{
+            position:absolute;
+            z-index:2;
+            width:300px;
+            height:80px;
+            bottom:0px;
+            background-color: rgba(255, 255, 255, 0.7);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .cart{
+            background-color:white;
+            border:2px solid black;
+            padding:8px 14px 8px 14px;
+            position: absolute;
+            font-size:13px;
+            font-weight:bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/HTML-CSS/Exercises/Exercise-8/8c/shirt_pic.avif" class="shirt">
+        <div class=" discount">20% OFF</div>
+        <div class="box">
+            <button class="cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

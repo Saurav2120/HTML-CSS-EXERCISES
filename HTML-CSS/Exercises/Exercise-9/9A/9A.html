@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head,.flex{
+            display:flex;
+            justify-content:space-between;
+            background-color: rgb(240, 234, 234);
+
+        }
+        .left{
+            background-color: lightblue;
+            width:200px;
+        }
+        .right{
+            background-color: lightpink;
+            width:75px;
+        }
+        .item1{
+            background-color: lightblue;
+            width:50px;
+        }
+        .item2{
+            background-color: lightpink;
+            flex:1;
+        }
+        .item3{
+            background-color: lightblue;
+            width:75px;
+        }
+        .item{
+            background-color: lightpink;
+        }
+        .height{
+            display:flex;
+            justify-content:space-between;
+            border:1px solid black;
+            height:50px;
+            align-items:center;
+        }
+        .items{
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="left">200px</div>
+        <div class="right">75px</div>
+    </div>
+
+    <div class="flex">
+        <div class="item1">item 1</div>
+        <div class="item2">item 2</div>
+        <div class="item3">item 3</div>
+    </div>
+
+    <div class="flex">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <div class="height">
+        <div class="items">item1</div>
+        <div class="items">item2</div>
+    </div>
+</body>
+</html>

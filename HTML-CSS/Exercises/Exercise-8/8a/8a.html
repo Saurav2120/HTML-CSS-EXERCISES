@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            display:grid;
+            grid-template-columns:200px 75px;
+            
+        }
+        .left{
+            background-color:skyblue;
+        }
+
+        .right{
+            background-color:pink;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns:50px 1fr 75px;
+        }
+        .colone{
+            background-color: aqua;
+        }
+        .coltwo{
+            background-color: pink;
+        }
+        .colthree{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <div class="first">
+        <div class="left">
+            200px    
+        </div>
+        <div class="right">
+            75px
+        </div>
+   </div>
+
+   <div class="grid">
+        <div class="colone">col1</div>
+        <div class="coltwo">col2</div>
+        <div class="colthree">col3</div>
+   </div>
+
+</body>
+</html>

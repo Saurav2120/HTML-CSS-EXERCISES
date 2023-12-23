@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+section{
+    position:relative;
+    height:100vh;
+    width:100%;
+    background-color: rgb(5, 5, 24);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    perspective:1000px;
+}
+section::before{
+    content:"";
+    position:absolute;
+    height:240px;
+    width:240px;
+    border-radius:50%;
+    background:linear-gradient(90deg,rgb(251, 4, 152),rgb(213, 127, 141),rgb(252, 252, 252));
+    transform:translate(-150px,-120px);
+}
+section::after{
+    content:"";
+    position:absolute;
+    height:240px;
+    width:240px;
+    border-radius:50%;
+    background:linear-gradient(90deg,rgb(251, 4, 152),rgb(213, 127, 141),white);
+    transform:translate(150px,120px);
+}
+.container{
+    position:relative;
+    width:375px;
+    height:250px;
+    z-index:100;
+    transition:all 0.9s ease-in-out;
+    transform-style:preserve-3d;
+}
+.container:hover{
+    transform:rotateY(180deg);
+}
+.container .card-face,.container .card-back{
+    width:100%;
+    height:100%;
+    backdrop-filter:blur(15px);
+    background: rgb(0, 0, 0,0.2);
+    box-shadow:1px 1px 3px rgb(51, 51, 51);
+    border-radius:24px;
+    position: absolute;
+    backface-visibility:hidden;
+
+}
+
+.card-face .head , .card-face .left , .card-face .end{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.head .right, .mid, .end{
+    margin:0 25px;
+}
+
+h3{
+    font-weight: lighter;
+}
+.logo{
+    width:100px; 
+    border-radius:50%;
+}
+.chip{
+    width:50px;
+    height:35px;
+    border-radius:4px;
+}
+.number, .date{
+    font-size:20px;
+    letter-spacing:1px;
+}
+.card-face .mid{
+    margin-bottom:25px;
+}
+.container .card-back{
+    transform:rotateY(180deg);
+}
+.card-back .line{
+    font-size:7.5px;
+    padding:16px 24px;
+}
+.card-back .black{
+    width:100%;
+    height:40px;
+    background-color:black;
+    margin-bottom:25px;
+}
+.card-back .boxx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:20px;
+}
+.card-back .white{
+    background-color: white;
+    height:45px;
+    width:280px;
+    border-radius:4px;
+    background:repeating-linear-gradient(white,white 3px,rgb(244, 230, 230) 0px,rgb(219, 214, 214) 10px);
+}
+.card-back .code{
+    background-color: white;
+    width:35px;
+    height:25px;
+    border-radius:0px 4px 4px 0px; 
+}
+.boxx .digit{
+    color:black;
+    font-size:14px;
+    font-weight:bold;
+}

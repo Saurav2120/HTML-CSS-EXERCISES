@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:350px;
+    width:325px;
+    box-shadow:0 1px 10px rgb(96,96,96);
+    border-radius:25px;
+    margin-top:150px;
+    position:relative;
+}
+.card::before{
+    content: ' ';
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color: blue;
+    height:115px;
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+    width:100%;
+}
+
+.upper{
+    position:relative;
+    height:115px;
+    width:115px;
+    background-color: blue;
+    border-radius:50%;
+    padding:3px;
+    margin-bottom:10px;
+}
+
+.dp{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    border-radius:50%;
+    border:3px solid white;
+}
+.lower{
+   
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.name{
+    font-weight:bold;
+    font-size:16px;
+}
+.work{
+    line-height:25px;
+    font-size:12px;
+    margin-bottom:10px;
+}
+.icon{
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+}
+.link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:18px;
+    color:white;
+    background-color:rgb(142, 142, 168);
+    margin:0px 8px;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+}
+.button{
+    display:flex;
+    align-items:center;
+}
+.click{
+    background-color: rgb(60, 60, 255);
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:8px 22px;
+    font-size:10px;
+    margin:0 10px;
+    transition:all 0.3 ease;
+    cursor:pointer;
+}
+
+.click:hover{
+    background-color: blue;
+}
+.traffic{
+    display:flex;
+    align-items:center;
+}
+.like{
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+    padding:0 15px;
+    font-size:13px;
+   
+    border-right:2px solid rgb(190, 190, 190);
+}
+.like:last-child{
+    border-right:none;
+}
+span{
+    margin-left:4px;
+
+}

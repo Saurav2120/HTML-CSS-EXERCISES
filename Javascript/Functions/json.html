@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //json = javascript object notation
+        /*
+        it is a syntax with less feature.
+
+        i)json doesn't support single quotes.
+        ii)it doesn't support function.
+
+        it can be understand by every programming language.
+
+        */
+        
+        const product2 = {
+            name : 'shirt',
+            'delivery-time' : '1 day',
+            rating : {
+                star : 4,
+                count : 87
+            },
+            fun : function function1(){
+                console.log('Function inside object');
+            }
+        }
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['delivery-time']);
+        console.log(product2.rating.count);
+        product2.fun();
+
+        //stringify is a method of the adjacent object, i.e function that is saved inside
+        //this object and we can call this function using brackets 
+        //json.stringify convert javascript object into json string
+        console.log(JSON.stringify(product2));
+
+        //json string is converting into javascript object
+        console.log(JSON.parse(JSON.stringify(product2)));
+    </script>
+</body>
+</html>
